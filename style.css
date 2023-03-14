@@ -66,6 +66,7 @@ body {
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
+    margin: 1rem 2rem;
 }
 
 
@@ -80,9 +81,14 @@ body {
 }
 
 .container-sobre__texto_principal {
-    justify-content: left;
+    text-align: justify;
+    word-wrap: break-word;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.container-sobre__texto_principal__mobile {
+    display: none;
 }
 
 .btn-linkedin__sobre {
@@ -100,6 +106,8 @@ body {
 
 .container-sobre__paragrafo {
     font-size: 1.2rem;
+    text-align: justify;
+    word-wrap: break-word;
     margin: var(--margem-padrao);
 }
 
@@ -118,6 +126,8 @@ body {
     font-size: 1.2rem;
     text-align: left;
     font-weight: 500;
+    text-align: justify;
+    word-wrap: break-word;
     width: 75vw;
 }
 
@@ -139,6 +149,12 @@ body {
     margin-bottom: 30px;
     transition: all .1s ease;
     padding: 0 2rem;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.container-cargos__caixa h3 {
+    text-align: center;
 }
 
 .container-cargos__caixa:hover {
@@ -215,9 +231,12 @@ justify-content: space-evenly;
     gap: 1rem;
 }
 
+.botoes-section-certificados__mobile {
+    display: none;
+}
+
 .btn-curriculo {
     padding: .5rem 1rem;
-    margin-right: 1rem;
     border-radius: 5px;
     border: 2px solid var(--azul);
     text-decoration: none;
@@ -235,6 +254,7 @@ justify-content: space-evenly;
     padding: .5rem 1rem;
     background: var(--azul);
     border-radius: 5px;
+    border: 2px solid var(--azul);
     text-decoration: none;
     text-align: center;
     color: var(--branco);
@@ -249,7 +269,7 @@ justify-content: space-evenly;
 }
 /* Footer */
 
-.container-footer {
+.container-footer {curricu
     display: flex;
     justify-content: space-between;
 }
@@ -329,11 +349,54 @@ footer {
     footer {
         padding: 0 1rem;
     }
+    .container-sobre__texto_principal {
+        font-size: 1.2rem;
+    }
+    .container-sobre__paragrafo {
+        font-size: 1rem;
+    }
+    .container-sobre__imagem {
+        width: 12rem;
+        height: 12rem;
+    }
+    .container-experiencia {
+        gap: 0;
+    }
+    .container-cargos__caixa {
+        padding: 0 1rem;
+        margin: 2rem 1rem;
+    }
+    .container-sobre__paragrafo__mobile {
+        display: none;
+    }
+    .container-sobre__texto_principal {
+        display: none;
+    }
+    .container-sobre__texto_principal__mobile {
+        display: flex;
+        text-align: justify;
+        word-wrap: break-word;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
 }
 
 @media screen and (max-width:400px) {
     .botoes-section-certificados {
-        flex-wrap: wrap;
-        
+        display: none;
+    }
+
+    .botoes-section-certificados__mobile {
+    display: flex;
+        /* display: inline-block;
+        justify-content: center;
+        max-width: 240px; */
+    }
+
+    .div-botoes {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
     }
 }
