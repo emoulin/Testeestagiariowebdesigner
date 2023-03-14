@@ -8,4 +8,4 @@ Este é um projeto desenvolvido para vaga de estagiário de Web Design da empres
 
 ## Caso queira ver o projeto no ar:
 
-[link do projeto](https://testeestagiariowebdesigner.vercel.app/)
+[link do projeto](https://testeestagiariowebdesigner-erik.vercel.app/)
